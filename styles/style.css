@@ -66,7 +66,10 @@ header {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0;
+}
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 .navigation__link {
@@ -74,6 +77,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 1.5rem;
 }
 
 
@@ -153,8 +157,8 @@ header {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("images\header-bike.jpg");
+  background-size: cover;
 }
 
 .hero h1 {
@@ -194,7 +198,14 @@ header {
 
 /* Article */
 
-.article {
+.article-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+article {
+  
   margin-bottom: 1rem;
 }
 
