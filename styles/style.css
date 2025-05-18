@@ -34,9 +34,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +44,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +95,28 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  .donate-button {
+    background-color: var(--orange-dark);
+    border: none;
+    color: var(--white);
+    text-align: center;
+    justify-content: center;
+    font-size: .9rem;
+    padding: .3rem;
+    border-radius: .2rem;
+
+  }
+
+  .volunteer-button {
+    background-color: var(--white);
+    border: none;
+    color: var(--orange-dark);
+    text-align: center;
+    justify-content: center;
+    font-size: .9rem;
+    padding: .3rem;
+    border-radius: .2rem;
+  }
 
 
 /* Content */
@@ -221,7 +242,7 @@ p {
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
@@ -231,7 +252,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
@@ -244,7 +265,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
