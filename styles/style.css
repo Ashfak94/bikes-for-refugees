@@ -110,7 +110,7 @@ header {
     border-radius: .2rem;
 
   }
-  .donate-button:hover:hover {
+  .donate-button:hover{
     background-color: var(--white);
     color: var(--orange-dark);
     border: 1px solid var(--orange-dark);
@@ -157,18 +157,23 @@ header {
 /* hero */
 
 .hero {
-  background-image: url("images\header-bike.jpg");
-  background-size: cover;
+  background-image: url("../images/header-bike.jpg");
+  background-size:initial;
+  padding:5rem 0 9rem 2rem;
+  margin-bottom: 2rem;
+  height: 6rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
 
 
@@ -201,12 +206,14 @@ header {
 .article-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5rem;
+  grid-gap: 1rem;
 }
 
 article {
-  
   margin-bottom: 1rem;
+  border-style: groove;
+  border-color:var(--white);
+  padding: 1rem;
 }
 
 .article__title {
@@ -246,6 +253,14 @@ article {
   text-decoration: underline;
 }
 
+.article-aside {
+  display: flex;
+}
+
+.article__content {
+padding-left: 1rem;
+}
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -253,6 +268,7 @@ article {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -272,11 +288,11 @@ footer {
 .footer__content {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 footer p {
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
   text-align: center;
   font-size: 0.85rem;
 }
